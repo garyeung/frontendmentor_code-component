@@ -6,12 +6,12 @@
 --darkBlue: hsl(218, 44%, 22%);
 --normalWeight: 400;
 --boldWeight: 700;
-font-size: 15px;
 font-family: 'Outfit', serif;
 
 }
 body {
     background-color: var(--lightGray);
+    font-size: 15px;
 }
 
 .container {
