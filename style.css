@@ -6,12 +6,20 @@
 --darkBlue: hsl(218, 44%, 22%);
 --normalWeight: 400;
 --boldWeight: 700;
-font-family: 'Outfit', serif;
+--base-font-size: 15px;
+--base-font-family: 'Outfit', serif;
 
 }
+
+@font-face {
+    font-family: "Outfit";
+    src: url("./fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     background-color: var(--lightGray);
-    font-size: 15px;
 }
 
 .container {
