@@ -60,8 +60,15 @@ body {
     font-size: 22px;
     font-weight: var(--boldWeight);
     color: var(--darkBlue);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 16px;
 }
 .qrCodeComponent .aid {
     color: var(--grayishBlue);
-    margin: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 20px;
 }
