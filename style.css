@@ -6,47 +6,69 @@
 --darkBlue: hsl(218, 44%, 22%);
 --normalWeight: 400;
 --boldWeight: 700;
-font-size: 15px;
-font-family: 'Outfit', serif;
+--base-font-size: 15px;
+--base-font-family: 'Outfit', serif;
 
 }
+
+@font-face {
+    font-family: "Outfit";
+    src: url("./fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
-    background-color: var(--lightGray);
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
 }
 
 .container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
   display: flex;
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
-  width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
+  background-color: var(--lightGray);
 }
 
 .qrCode {
     width: 100%;
+    border-radius: 10px;
 }
 
 .qrCodeComponent {
-    width: 300px;
-    padding: 20px;
+    width: 290px;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
     background: var(--white);
-}
-.roundBoard {
-    border-radius: 5%;
+    border-radius: 20px;
 }
 .text-adjust {
-    margin: 15px 5px;
     text-align: center;
 }
 
 .qrCodeComponent .caption {
-    font-size: 1.5rem;
+    font-size: 22px;
     font-weight: var(--boldWeight);
     color: var(--darkBlue);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 16px;
 }
 .qrCodeComponent .aid {
     color: var(--grayishBlue);
-    font-weight: var(--normalWeight);
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 20px;
 }
